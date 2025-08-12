@@ -21,7 +21,7 @@ def listar_produtos():
     except FileNotFoundError:
         print("nenhum produto cadastrado ainda.")
         
-while true:
+while True:
     print("\n1 - cadastrar produtos")
     print("2 - listar produtos")
     print("0 - sair")
@@ -29,5 +29,9 @@ while true:
     
     if opção == "1":
         produto = cadastrar_produto()
-        salvar
+        salvar_produto(produto)
+    elif opção == "2":
+        listar_produtos()
+    elif opção == "0":
+        break
     
